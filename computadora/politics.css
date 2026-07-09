@@ -1,60 +1,45 @@
+/* Estilos específicos de la página Política de Privacidad.
+   La base visual (header, container, footer) vive en capilar.css */
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin: 30px;
-}
-.suprime {
-    display: grid;
-    grid-template-columns: 200px 500px;
-    position: absolute;
- 
-    top: 100%;
-    column-gap: 140%;
-    margin: 0;
-    padding: 0;
-}
-a{
-    color: rgb(0, 0, 0);
-    font-size: 28px;
-      
-}
-legend{
-    text-align: center;
-    font-size: 48px;
+.legal-page{
+    color: var(--sky);
+    line-height: 1.8;
+    font-size: 15px;
 }
 
-.hero{height: 35px;width: 35px;
-    border: 2px solid #000000;
-    position: relative;
-    left: 18%;
-}
-input:focus{
-    
-    background-color: black;
-    box-shadow: 0 0 20px 1px rgb(34, 34, 34);
-    border: 1px solid black;
-    outline: none;
+.legal-page p{
+    margin-bottom: 18px;
 }
 
-@media (max-width: 700px){
-    *{margin: 15px;
-    font-size: 15px;}
-
-    legend{
-        text-align: center;
-        font-size: 29px;
-    }
-
-    .hero{height: 20px;
-    }
-    .suprime{
-        grid-template-columns: 100px 200px;
-        top: 140%;
-        column-gap: 14%;
-    }
-a{
-    color: rgb(0, 0, 0);
-    font-size: 16px;
+.legal-list{
+    margin: 0 0 22px 22px;
 }
+
+.legal-list li{
+    margin-bottom: 6px;
+}
+
+.suprime{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(200,236,255,.15);
+}
+
+.suprime label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suprime .hero{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--blue);
+}
+
+.suprime a{
+    color: var(--minle);
+}
+.suprime a:hover{
+    color: #fff;
 }

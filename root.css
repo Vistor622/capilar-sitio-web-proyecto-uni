@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorfondo:rgb(28, 184, 158);
+    --EJEM:RED;
+    --ala:yellow;
+}
+div{
+    height: 30p0x;
+    width: 200px;
+    background-color: var(--colorfondo);
+}
+/*:hover CAMBIA COLOR,PUEDES PONER HOVER EN HTML SOLO CUANDO PASAS POR ENCIMA*/
+
+/* .b */:active{
+    background-color: var(--EJEM);
+    COLOR:var(--colorfondo);/* es click */
+}
+
+/* .c> */ :visited{
+
+    background-color: var(--EJEM);
+    COLOR:var(--ala);
+}
+
+/* .d */ *:link {
+    background-color: var(--EJEM);
+    text-decoration: var(--ala);
+}
+
+/* forms auto fill es responsivo "" y acomoda las partes del formulario automaticamente 
+place-ite,:center centra todo
+1rem=16px a bace de crom
+box-sadoow y x degradado esparcidow sombraaaaaaaa
+hacer modal */
+
+/* input[type="text"]:focus{
+    box-shadow: 0 0 10px, gold;
+    border: none;
+    outline: none;
+}
+
+input:active
+
+para desabilitar un elemento en html es   disabled
+
+input[type="email"]:valid{}
+    input[type="email"]:invalid{}
+
+    input:required{
+        border:3px red;
+    }
+
+    input:cheked{
+        trandform:scale 2;
+
+    }
+    */

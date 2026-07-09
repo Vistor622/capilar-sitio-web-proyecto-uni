@@ -1,0 +1,60 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 30px;
+}
+.suprime {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    position: absolute;
+ 
+    top: 630%;
+    column-gap: 140%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+      
+}
+legend{
+    text-align: center;
+    font-size: 48px;
+}
+
+.hero{height: 35px;width: 35px;
+    border: 2px solid #000000;
+    position: relative;
+    left: 18%;
+}
+input:focus{
+    
+    background-color: black;
+    box-shadow: 0 0 20px 1px rgb(34, 34, 34);
+    border: 1px solid black;
+    outline: none;
+}
+
+@media (max-width: 700px){
+    *{margin: 15px;
+    font-size: 15px;}
+
+    legend{
+        text-align: center;
+        font-size: 29px;
+    }
+
+    .hero{height: 20px;
+    }
+    .suprime{
+        grid-template-columns: 100px 200px;
+        top: 1010%;
+        column-gap: 14%;
+    }
+a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+}

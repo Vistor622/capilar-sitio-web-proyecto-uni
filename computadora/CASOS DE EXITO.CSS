@@ -1,0 +1,1199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --blue:#127AA1;
+    --mar:#223D65;
+    --sky:#C8ECFF;
+    --bor:#A1D3E3;
+    --letra:#FFFFFF;
+    --minle:#C6E8FF;
+}
+header{
+    background-color:var(--blue);
+    height:20.7vh;
+}
+
+h1{
+    display: grid;
+    grid-template-columns: 7.6vw 30.83vw;
+    position: relative;
+    top: 32%;
+    gap: 23px;
+    color: #FFFFFF;
+    text-shadow:2px 2px 2px black;
+    font-size: 48px;
+}
+h1 div{
+    position: relative;
+    left: 2%;
+    color: white;
+    text-shadow: #1c90bb;
+}
+.nigth{
+    height: 15.2vh;
+background-color: #ffffff00;
+    border-radius: 100%;
+}
+.nigth:active{
+    transition: 400ms;
+    background-color: #14456600;
+}
+/* .dog :visited{
+    
+} */
+.nigth:link{
+    text-decoration: none;
+}
+
+
+.one{
+    height: 15.2vh;
+    position: relative;
+    left: 10%;
+    top: -27%;
+    z-index: 10;
+    border-radius: 100%;
+    box-shadow: 4px 8px 8px rgb(34, 34, 34);
+}
+.one:hover{
+    transition: 400ms;
+    box-shadow: 10px 6px 9px rgb(34, 34, 34);
+}
+
+.cat{
+    display: grid;
+    grid-template-columns: repeat(3, 13.88vw);
+    grid-template-rows: 10.1vh;
+gap: 40px;
+position: relative;
+top: -48%;
+
+}
+.cat a{
+position: relative;
+left: 360%;
+border-radius: 40px;
+background-color: #144566;
+color: #C8ECFF;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+}
+
+.cat :hover{
+    transition: 400ms;
+    box-shadow: 5px 9px 8px rgb(34, 34, 34);
+    background: rgb(28,101,151);
+    background: linear-gradient(180deg, rgba(28,101,151,1) 50%, rgba(110,219,253,0.93) 100%);
+}
+
+ .dog:active{
+    transition: 400ms;
+    background-color: #144566;
+}
+/* .dog :visited{
+    
+} */
+.dog:link{
+    text-decoration: none;
+}
+
+ body{
+    height: 100vh;
+ }
+
+
+
+
+ footer{
+    background-color:var(--mar);
+ height: 23%;
+ font-size:26px;
+ color: var(--sky);
+}
+
+.redes{
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,30px 14vw) ;
+    column-gap: 30px;
+    justify-content:first baseline;
+    position: absolute;
+    left: 10%;
+    top: -4%;
+}
+.dragon{
+    color: var(--sky);
+}
+.dino{position: relative;
+    right: 16%;
+}
+.texto{
+    position: relative;
+    left: -1%;
+    place-items:center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.texto div{
+    position: relative;
+    top: 45%;
+}
+.ok{
+    position: absolute;
+}
+.legal{
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    position: relative;
+    align-items: flex-end;
+ gap: 40vw;
+
+}
+.legal div{ 
+   
+       position: relative;
+    top: 10%;
+    left: 13%;
+    
+}
+.t{
+    color: var(--minle);
+}
+.p{
+  text-align:end;
+  color: var(--minle);
+}
+.julio{position: relative;
+   top: 22%;
+}
+
+.fondo{
+    position: absolute;
+    z-index: -20;
+    width:99.9%;
+    height: 200%;
+    background: rgb(6,68,110);
+    background: linear-gradient(180deg, rgba(6,68,110,1) 0%, rgba(37,144,184,1) 22%, rgba(25,102,153,0.73) 45%, rgba(30,125,189,0.9921218487394958) 85%, rgba(5,68,109,1) 95%);
+}
+
+
+
+.eva{
+    display: grid;
+    grid-template-columns: 26.38vw 41vw 26.38vw;
+    grid-template-rows: 48.4vh 60vw  ;
+    position: relative;
+}
+
+.ra{
+    position: relative;
+    top: 110%;
+    left: 10%;
+
+    animation-name:cero;
+    animation-duration: 30s;
+    animation-iteration-count: 3;
+    animation-delay: 2s; 
+  
+} 
+
+
+@keyframes cero{
+    0%{
+        
+background-image: url(../anima/0.jpg);background-size:100% 100%;
+        top: 110%;
+    left: 10%;}
+
+    8.3%{
+        background-image: url(../anima/0.jpg);background-size: 100% 100%;
+    top: 110%;
+    left: 10%;
+}
+    
+        16.6%{
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            top: 110%;
+        left:265.5%;
+        background-color: rgb(32, 144, 236);
+        z-index: -3;
+        
+    }
+
+        25%{ 
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            left:265.5%;
+            top: 110%;
+            z-index: 0;
+        }
+
+            33.3%{
+                background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            height:  41vw;
+            width:  41vw;
+            top: 75%;
+                left:110%;
+                z-index: 10;
+            }
+    
+            41.6%{
+                background-image: url(../anima/3.jpg);background-size: 100% 100%;
+                height:  41vw;
+                width:  41vw;
+                top: 75%;
+            left:110%;
+            
+            }
+    
+            50%{  background-image: url(../anima/3.jpg);background-size: 100% 100%;
+                top: 110%;
+                left: 10%;
+                height:  48.4vh;
+            width:  26.38vw;
+            background-color: rgb(32, 144, 236);
+            }
+                  
+            58.3%{
+                background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            top: 110%;
+            left: 10%;
+        }
+            
+                66.6%{
+                    background-image: url(../anima/0.jpg);background-size:100% 100%;
+                    top: 110%;
+                left:265.5%;
+                background-color: rgb(32, 144, 236);
+                z-index: -3}
+        
+                75%{ background-image: url(../anima/0.jpg);background-size: 100% 100%;
+                    height:  48.4vh;
+                    width:  26.38vw;
+                    left:265.5%;
+                    top: 110%;
+                    z-index: 0;
+                }
+        
+                    83.3%{
+                        background-image: url(../anima/0.jpg);background-size: 100% 100%;
+                    height:  41vw;
+                    width:  41vw;
+                    top: 75%;
+                        left:110%;
+                        z-index: 10;
+            
+                    }
+            
+                    91.6%{
+                        background-image: url(../anima/0.jpg);background-size: 100% 100%;
+                        height:  41vw;
+                        width:  41vw;
+                        top: 75%;
+                    left:110%;
+                    }
+            
+                    100%{
+                        background-image: url(../anima/0.jpg);background-size: 100% 100%;
+                        top: 110%;
+                        left: 10%;
+                        height:  48.4vh;
+                    width:  26.38vw;
+                    background-color: rgb(32, 144, 236);
+                    }
+
+    }
+.a{
+    position: relative;
+    top: 110%;
+    left: 10%;
+
+    animation-name:dos;
+    animation-duration: 30s;
+    animation-iteration-count: 3;
+    animation-delay: 2s; 
+}
+@keyframes dos{
+    0%{background-image: url(../anima/1.jpg);background-size: 100% 100%;
+         height:  48.4vh;
+        width:  26.38vw;
+        top: 110%;
+    left: 10%;}
+
+    8.3%{
+        background-image: url(../anima/1.jpg);background-size: 100% 100%;
+        height:  48.4vh;
+        width:  26.38vw;
+    top: 110%;
+    left: 10%;}
+    
+    16.6%{
+        background-image: url(../anima/1.jpg);background-size: 100% 100%;
+            height:  41vw;
+            width:  41vw;
+            top: 75%;
+        left:-145.5%;
+        background-color: aquamarine;}
+
+        25%{
+            background-image: url(../anima/1.jpg);background-size: 100% 100%;
+            height:  41vw;
+            width:  41vw;
+            top: 75%;
+        left:-145.5%;
+        
+        
+        }
+
+        33.3%{
+            background-image: url(../anima/1.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+        left: -246%;
+         z-index: 0;
+  
+        }
+
+        41.6%{
+            background-image: url(../anima/1.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+        left: -246%;
+       
+        }
+
+        50%{
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+      
+            height:  48.4vh;
+        width:  26.38vw;
+        top: 110%;
+    left: 10%;
+    z-index: -2;
+    background-color: aquamarine;
+        }
+     
+       58.3%{
+        background-image: url(../anima/4.jpg);background-size: 100% 100%;
+           height:  48.4vh;
+           width:  26.38vw;
+       top: 110%;
+       left: 10%;}
+       
+       66.6%{
+        background-image: url(../anima/4.jpg);background-size: 100% 100%;
+               height:  41vw;
+               width:  41vw;
+               top: 75%;
+           left:-145.5%;
+           background-color: aquamarine;}
+   
+           75%{
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+               height:  41vw;
+               width:  41vw;
+               top: 75%;
+           left:-145.5%;
+           
+           
+           }
+   
+           83.3%{
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+               height:  48.4vh;
+               width:  26.38vw;
+               top: 110%;
+           left: -246%;
+            z-index: 0;
+   
+           }
+   
+           91.6%{
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+               height:  48.4vh;
+               width:  26.38vw;
+               top: 110%;
+           left: -246%;
+          
+           }
+   
+           100%{
+            background-image: url(../anima/1.jpg);background-size: 100% 100%;
+               height:  48.4vh;
+           width:  26.38vw;
+           top: 110%;
+       left: 10%;
+       z-index: -2;
+       background-color: aquamarine;
+           }
+
+    }
+
+.s{
+    height: 41vw ;
+    position: relative;
+    top: 75%;
+    left: 6.4%;
+
+    animation-name:uno;
+    animation-duration: 30s;
+    animation-iteration-count: 3;
+    animation-delay: 2s; 
+}/* origen */
+@keyframes uno{
+    0%{ 
+        background-image: url(../anima/2.jpg);background-size: 100% 100%;
+        top: 75%;
+        left: 6.4%;}
+
+        8.3%{ background-image: url(../anima/2.jpg);background-size: 100% 100%;
+            height:  41vw;
+        width:  41vw;
+        top: 75%;
+        left: 6.4%;}
+    
+       16.6%{
+        background-image: url(../anima/2.jpg);background-size: 100% 100%;
+       height:  48.4vh;
+        width:  26.38vw;
+        top: 110%;
+       left: -58.1%;
+        background-color: rgb(25, 209, 233);}
+
+        25%{
+            background-image: url(../anima/2.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+           left: -58.1%;
+       
+        
+        }
+
+        33.3%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+        left: 106.7%;
+        
+
+        }
+
+        41.6%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+        left: 106.7%;
+        }
+
+        50%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height:  41vw;
+            width:  41vw;
+            top: 75%;
+            left: 6.4%;
+            background-color: rgb(25, 209, 233);
+        }
+
+    
+    
+            58.3%{
+                background-image: url(../anima/6.jpg);background-size: 100% 100%;
+                height:  41vw;
+            width:  41vw;
+            top: 75%;
+            left: 6.4%;}
+        
+           66.6%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+           height:  48.4vh;
+            width:  26.38vw;
+            top: 110%;
+           left: -58.1%;
+            background-color: rgb(25, 209, 233);}
+    
+            75%{
+                background-image: url(../anima/6.jpg);background-size: 100% 100%;
+                height:  48.4vh;
+                width:  26.38vw;
+                top: 110%;
+               left: -58.1%;
+           
+            
+            }
+    
+            83.3%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height:  48.4vh;
+                width:  26.38vw;
+                top: 110%;
+            left: 106.7%;
+            
+    
+            }
+    
+            91.6%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height:  48.4vh;
+                width:  26.38vw;
+                top: 110%;
+            left: 106.7%;
+            }
+    
+            100%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height:  41vw;
+                width:  41vw;
+                top: 75%;
+                left: 6.4%;
+                background-color: rgb(25, 209, 233);
+            }
+
+
+    }
+
+
+/* tableeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeet */
+
+@media (max-width: 1000px){
+/* header{
+    background-color: #a11212;
+    height:12vh ;
+} */
+
+
+h1{
+display: grid;
+grid-template-columns: 7.2vw 30.83vw;
+position: relative;
+top: 25%;
+gap: 23px;
+height: 7.5vh;
+}
+h1 div{
+left: 2%;
+}
+.one{
+height: 5.4vh;
+position: relative;
+top: 10%;
+left: 20%;
+z-index: 10;
+}
+
+.cat{
+display: grid;
+grid-template-columns: repeat(3, 14.9vw);
+grid-template-rows: 3.5vh;
+gap: 27px;
+position: relative;
+top: -23%;
+
+}
+.cat div{
+position: relative;
+left: 290%;
+}
+
+footer{
+height: 23.33%;
+}
+
+.eva{
+    display: grid;
+    grid-template-columns: 26vw 36vw 26vw;
+    grid-template-rows: 18vh 50vh  ;
+    position: relative;
+}
+.eva div{
+    position: relative;
+    left: 5.5vw;
+}
+
+
+.ra{
+    position: relative;
+    top: 110%;
+    left: 10%;
+}
+.a{
+    position: relative;
+    top: 110%;
+    left: 10%;
+}
+.s{
+    height: 29.2vh ;
+    position: relative;
+    top: 77%;
+    left: 6.4%;
+}
+    
+.m{ 
+    width: 75.7vw;
+    height: 19.5vh ;
+    position: relative;
+    top: -8vh;
+    left: 12.5%;
+
+}
+
+    }
+
+/* ceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeluuuuuuuuuuuuuuuuuuuuu
+laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrrrrrrrrrrrrrr */
+@media (max-width: 700px){
+    header{
+ 
+        height:10.5vh ;
+    }
+  
+
+h1{
+display: grid;
+grid-template-columns: 13.6vw 1fr;
+position: relative;
+top: 10%;
+gap: 11px;
+height: 6.5vh;
+font-size: 20px;
+}
+h1 div{
+left: 8%;
+}
+.one{
+height: 6.5vh;
+position: relative;
+top: 10%;
+z-index: 10;
+}
+
+.cat{
+display: grid;
+grid-template-columns: repeat(3, 19.88vw);
+grid-template-rows: 3.8vh;
+gap: 21px;
+position: relative;
+top:-6%;
+
+}
+.cat a{
+position: relative;
+left: 97%;
+font-size: 9px;
+}
+
+
+footer{
+height: 3vh;font-size:10px;
+position: relative;
+top: 36%;
+background-color:rgba(255, 255, 255, 0);
+}
+
+    
+    .dragon{
+        color: var(--sky);
+       
+    }
+    .furianocturna{
+        height: 13px;
+        width: 13px;
+    }
+    
+    .redes{
+       
+        grid-template-columns: repeat(3,20px 19vw) ;
+        column-gap: 10px;
+      
+        left: 10%;
+        top: 1%;
+    }
+    .dino{position: relative;
+        right: 16%;
+    }
+    .texto{
+       
+        position: relative;
+        left: -1%;
+        display: grid; 
+       text-align:center;
+        grid-template-columns: 95vw;
+        grid-template-rows: 1fr 1fr;
+    }
+    .texto div{
+        position: relative;
+        top: 95%;
+        text-align: start;
+        left: 10%;
+    }
+.fondo{
+    height: 130%;
+}
+    .ok{
+        position: absolute;
+        top: 128%;
+        height: 22%;
+    }
+    .legal{
+        display: grid;
+        grid-template-columns: 35vw 30vw;
+     
+     gap: 30vw;
+    
+    }
+    .legal div{ 
+           position: relative;
+        top: 10%;
+        left: 13%;
+        
+    }
+    .t{
+        color: var(--minle);
+        position: relative;
+        top: 70%;
+        left: 0%;
+    }
+    .p{
+      text-align:end;
+      color: var(--minle);
+      position: relative;
+      top: 70%;
+      right: 33%;
+    }
+    .julio{position: relative;
+       top: 15%;
+    }
+
+
+
+
+.eva{
+    display: grid;
+    grid-template-columns: 26.38vw 36vw 26.38vw;
+    grid-template-rows: 10.9vh 52.9vh  ;
+    position: relative;
+}
+.eva div{
+    position: relative;
+    left: 5.5vw;
+}
+
+
+.ra{
+    position: relative;
+    top: 109%;
+    left: 21%;
+    animation-name:clon;
+    height:  10.9vh;
+            width:  26.38vw;
+}
+
+.a{
+    position: relative;
+    top: 109%;
+    left: 21%;
+    animation-name:star;
+    height:  10.9vh;
+    width:  26.38vw;
+}
+
+.s{
+    height:  14vh;
+    width:   36vw;
+    position: relative;
+    top: 93%;
+    left: 15%;
+    z-index: 5;
+    animation-name:war;
+}
+    
+.m{ position: absolute;
+    display: grid;
+    
+    grid-template-columns: repeat(2,36vw);
+    grid-template-rows: repeat(4,14.2vh);
+    gap: 30px;
+    position: relative;
+    top: -27vh;
+    left: 10.5%;
+}
+
+.m :nth-child(1) {background-image: url(../anima/55555555555555555555555555555.jpg); background-size: 100% 100%;}
+
+.m :nth-child(2) {background-image: url(../anima/4.jpg); background-size: 100% 100%;}
+
+.m :nth-child(3) {background-image: url(../galeria/44444444444444444444444444.jpg); background-size: 100% 100%;}
+
+.m :nth-child(4) {background-image: url(../galeria/22222222222222.jpg); background-size: 100% 100%;}
+
+.m :nth-child(5) {background-image: url(../galeria/3333333333333333333333.jpg); background-size: 100% 100%;}
+
+.m :nth-child(6) {background-image: url(../galeria/666666666666666666666666666666666.jpg); background-size: 100% 100%;}
+
+.m :nth-child(7) {background-image: url(../anima/6.jpg); background-size: 100% 100%;}
+
+.m :nth-child(8) {background-image: url(../anima/3.jpg); background-size: 100% 100%;}
+
+
+
+
+
+@keyframes clon{
+    0%{ top: 109%;
+        left: 21%;
+        background-image: url(../anima/0.jpg);background-size:100% 100%;
+        }
+
+    8.3%{
+    top: 109%;
+    left: 21%;
+    background-image: url(../anima/0.jpg);background-size:100% 100%;
+}
+    
+        16.6%{
+            top: 109%;
+            left:257.5%;
+        background-color: rgb(32, 144, 236);
+        z-index: -3;
+        background-image: url(../anima/3.jpg);background-size: 100% 100%;
+    }
+
+        25%{ 
+            height:  10.9vh;
+            width:  26.38vw;
+            left:257.5%;
+            top: 109%;
+            z-index: 0;
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+        }
+
+            33.3%{
+               
+                height:  14vh;
+                width:   36vw;
+            top: 93%;
+                left:121%;
+                z-index: 10;
+                background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            }
+    
+            41.6%{
+                height:  14vh;
+                width:   36vw;
+                top: 93%;
+            left:121%;
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            }
+    
+            50%{top: 109%;
+                left: 21%;
+                height:  10.9vh;
+            width:  26.38vw;
+            background-color: rgb(32, 144, 236);
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+            }
+                  
+            58.3%{
+            top: 109%;
+            left: 21%;
+            background-image: url(../anima/3.jpg);background-size: 100% 100%;
+        }
+            
+                66.6%{
+                    background-image: url(../anima/0.jpg);background-size:100% 100%;
+                    top: 109%;
+                    left:257.5%;
+                background-color: rgb(32, 144, 236);
+                z-index: -3}
+        
+                75%{ 
+                    height: 10.9vh;
+                    width:  26.38vw;
+                    top: 109%;
+                    left:257.5%;
+                    z-index: 0;
+                    background-image: url(../anima/0.jpg);background-size:100% 100%;
+                }
+        
+                    83.3%{
+                       
+                        height:  14vh;
+                        width:   36vw;
+                        top: 93%;
+                        left:121%;
+                        z-index: 10;
+                        background-image: url(../anima/0.jpg);background-size:100% 100%;
+                    }
+            
+                    91.6%{
+                        height:  14vh;
+                     width:   36vw;
+                      top: 93%;
+                      left:121%;
+                      background-image: url(../anima/0.jpg);background-size:100% 100%;
+                    }
+            
+                    100%{top: 110%;
+                        left: 21%;
+                        height:  10.9vh;
+                    width:  26.38vw;
+                    background-color: rgb(32, 144, 236);
+                    background-image: url(../anima/0.jpg);background-size:100% 100%;
+                    }
+
+    }
+
+@keyframes star{
+    0%{
+         height: 10.9vh;
+        width:  26.38vw;
+        top: 109%;
+    left: 21%;
+    background-image: url(../anima/1.jpg);background-size: 100% 100%;
+
+}
+
+    8.3%{
+        height: 10.9vh;
+        width:  26.38vw;
+    top: 109%;
+    left: 21%;
+    background-image: url(../anima/1.jpg);background-size: 100% 100%;
+}
+    
+    16.6%{
+        height:  14vh;
+        width:   36vw;
+            top: 93%;
+        left:-116.1%;
+        background-color: aquamarine;
+        background-image: url(../anima/1.jpg);background-size: 100% 100%;
+    }
+
+        25%{
+            height:  14vh;
+            width:   36vw;
+            top: 93%;
+        left:-116.1%;
+        background-image: url(../anima/1.jpg);background-size: 100% 100%;
+        
+        
+        }
+
+        33.3%{
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+        left: -216.5%;
+         z-index: 0;
+         background-image: url(../anima/1.jpg);background-size: 100% 100%;
+  
+        }
+
+        41.6%{
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+        left: -216.5%;
+        background-image: url(../anima/1.jpg);background-size: 100% 100%;
+       
+        }
+
+        50%{
+            background-image: var(--image);
+            height:  10.9vh;
+        width:  26.38vw;
+        top: 109%;
+    left: 21%;
+    z-index: -2;
+    background-color: aquamarine;
+    background-image: url(../anima/4.jpg);background-size: 100% 100%;
+        }
+     
+       58.3%{
+           height:  10.9vh;
+           width:  26.38vw;
+           top: 109%;
+           left: 21%;
+           background-image: url(../anima/4.jpg);background-size: 100% 100%;
+        }
+       
+       66.6%{
+        height:  14vh;
+        width:   36vw;
+        top: 93%;
+        left:-116.1%;
+           background-color: aquamarine;
+           background-image: url(../anima/4.jpg);background-size: 100% 100%;
+        }
+   
+           75%{
+            height:  14vh;
+            width:   36vw;
+            top: 93%;
+            left:-116.1%;
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+
+           }
+   
+           83.3%{
+               height: 10.9vh;
+               width:  26.38vw;
+               top: 109%;
+               left: -216.5%;
+            z-index: 0;
+            background-image: url(../anima/4.jpg);background-size: 100% 100%;
+   
+           }
+   
+           91.6%{
+               height: 10.9vh;
+               width:  26.38vw;
+               top: 109%;
+               left: -216.5%;
+               background-image: url(../anima/4.jpg);background-size: 100% 100%;
+          
+           }
+   
+           100%{
+               height: 10.9vh;
+           width:  26.38vw;
+           top: 109%;
+    left: 21%;
+       z-index: -2;
+       background-color: aquamarine;
+       background-image: url(../anima/1.jpg);background-size: 100% 100%;
+           }
+
+    }
+
+/* origen */
+@keyframes war{
+    0%{
+        background-image: url(../anima/2.jpg);background-size: 100% 100%;
+         top: 93%;
+        left: 15%;
+    z-index: 5;}
+
+        8.3%{
+            background-image: url(../anima/2.jpg);background-size: 100% 100%;
+            height:  14vh;
+        width:   36vw;
+        top: 93%;
+        left: 15%;}
+    
+       16.6%{
+        background-image: url(../anima/2.jpg);background-size: 100% 100%;
+       height:  10.9vh;
+        width:  26.38vw;
+        top: 109%;
+       left: -59.2%;
+        background-color: rgb(25, 209, 233);}
+
+        25%{
+            background-image: url(../anima/2.jpg);background-size: 100% 100%;
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+           left: -59.2%;
+       z-index: 0;
+        
+        }
+
+        33.3%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+        left: 116.7%;
+        
+
+        }
+
+        41.6%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+        left: 116.7%;
+        }
+
+        50%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height:  14vh;
+            width:   36vw;
+            top: 93%;
+        left: 15%;
+            background-color: rgb(25, 209, 233);
+        }
+
+    
+    
+            58.3%{ 
+                background-image: url(../anima/6.jpg);background-size: 100% 100%;
+                height:  14vh;
+                width:   36vw;
+                top: 93%;
+                left: 15%;}
+        
+           66.6%{
+            background-image: url(../anima/6.jpg);background-size: 100% 100%;
+            height: 10.9vh;
+            width:  26.38vw;
+            top: 109%;
+            left: -59.2%;
+            background-color: rgb(25, 209, 233);}
+    
+            75%{
+                background-image: url(../anima/6.jpg);background-size: 100% 100%;
+                height: 10.9vh;
+                width:  26.38vw;
+                top: 109%;
+                left: -59.2%;
+                z-index: 0;          
+            
+            }
+    
+            83.3%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height: 10.9vh;
+                width:  26.38vw;
+                top: 109%;
+                left: 116.7%;
+            z-index: -1;
+    
+            }
+    
+            91.6%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height: 10.9vh;
+                width:  26.38vw;
+                top: 109%;
+        left: 116.7%;
+            }
+    
+            100%{
+                background-image: url(../anima/2.jpg);background-size: 100% 100%;
+                height:  14vh;
+                width:   36vw;
+                top: 93%;
+                left: 15%;
+                background-color: rgb(25, 209, 233);
+            }
+
+
+    }
+
+}

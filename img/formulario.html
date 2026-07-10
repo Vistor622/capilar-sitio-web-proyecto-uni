@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita | CAPILAR HEALTH</title>
+    <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html" class="nigth">
+                    <img class="one" src="img/logo.jpg" alt="Logo Capilar Health">
+                </a>
+                CAPILAR HEALTH
+            </h1>
+            <nav class="cat">
+                <a href="casos-de-exito.html">RESULTADOS</a>
+                <a href="diagnostico.html">DIAGNÓSTICO</a>
+                <a href="producto.html">PRODUCTO</a>
+            </nav>
+            <a class="carro" href="producto.html#pedido">
+                <img src="img/carrito.png" alt="Carrito de compras" height="34">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <img src="img/diagnostico-hero.jpg" alt="Agenda tu cita">
+        <div class="page-hero-copy">
+            <h2>AGENDA TU CITA O TEST CAPILAR</h2>
+            <h3>Completa el siguiente formulario y nos pondremos en contacto contigo</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="capi-form" action="">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="871 000 0000" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="name@email.com" required>
+
+            <label for="motivo">¿Qué te gustaría agendar?</label>
+            <select id="motivo" name="motivo">
+                <option value="videollamada">Videollamada con la especialista ($500)</option>
+                <option value="test">Test capilar gratuito</option>
+                <option value="cita">Cita presencial</option>
+            </select>
+
+            <div class="check-row">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los <a href="terminos.html">Términos y Condiciones</a> y la <a href="politica.html">Política de Privacidad</a></label>
+            </div>
+
+            <button class="epic" type="submit">ENVIAR SOLICITUD</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="julio">
+            <div class="redes">
+                <div>
+                    <a class="dragon" href="https://www.facebook.com/CapilarHealth1">
+                        <img class="furianocturna" src="img/facebook.webp" alt="Facebook">
+                    </a>
+                    <div class="dino">Capilar Health</div>
+                </div>
+                <div>
+                    <a class="dragon" href="https://www.instagram.com/capilarhealth1/">
+                        <img class="furianocturna" src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <div class="dino">Capilar Health1</div>
+                </div>
+                <div>
+                    <a class="dragon" href="">
+                        <img class="furianocturna" src="img/whatsapp.webp" alt="WhatsApp">
+                    </a>
+                    <div class="dino">871 466 6418</div>
+                </div>
+            </div>
+
+            <div class="legal">
+                <a class="t" href="terminos.html">Términos y Condiciones</a>
+                <a class="p" href="politica.html">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

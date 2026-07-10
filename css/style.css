@@ -628,7 +628,7 @@ footer{
     padding: 0 24px 50px;
 }
 
-.order-actions a, .order-actions div{
+.order-actions a, .order-actions div, .order-actions button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -639,12 +639,14 @@ footer{
     background: rgba(20,69,102,.55);
     color: var(--sky);
     font-size: 14px;
+    font-family: inherit;
     letter-spacing: .3px;
     transition: all .3s ease;
     cursor: pointer;
+    outline: none;
 }
 
-.order-actions a:hover, .order-actions div:hover{
+.order-actions a:hover, .order-actions div:hover, .order-actions button:hover{
     background: linear-gradient(180deg, rgba(28,101,151,1) 0%, rgba(79,214,196,.9) 100%);
     color: #fff;
     box-shadow: 0 6px 14px rgba(0,0,0,.3);
@@ -781,25 +783,10 @@ footer{
     cursor: not-allowed;
 }
 
-/* botones de acciones de pedido (ahora <button>, se ve igual que antes) */
-.order-actions button{
-    font: inherit;
-    border: 1px solid rgba(200,236,255,.35);
-    background: rgba(20,69,102,.55);
-    color: var(--sky);
-    outline: none;
-}
-
+/* botones de acciones de pedido (ahora <button>, mismo estilo que antes) */
 .order-actions button:focus-visible{
     outline: none;
     box-shadow: 0 0 0 3px rgba(79,214,196,.55);
-}
-
-.order-actions button:hover{
-    background: linear-gradient(180deg, rgba(28,101,151,1) 0%, rgba(79,214,196,.9) 100%);
-    color: #fff;
-    box-shadow: 0 6px 14px rgba(0,0,0,.3);
-    transform: translateY(-2px);
 }
 
 .order-actions .badge{
@@ -811,6 +798,10 @@ footer{
     color: #06231f;
     font-size: 11px;
     font-weight: 700;
+}
+
+.order-actions .badge[hidden]{
+    display: none;
 }
 
 /* resumen de pedido, arriba de los botones */

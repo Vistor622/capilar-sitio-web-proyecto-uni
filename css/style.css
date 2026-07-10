@@ -259,10 +259,26 @@ h1{
     margin: 20px auto 60px;
     padding: 0 24px;
 }
-.promo img{
-    width: 100%;
+.promo-fondo{
+    background-size: cover;
+    background-position: center;
     border-radius: var(--radius);
     box-shadow: 0 14px 30px rgba(0,0,0,.35);
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+}
+.promo-fondo h3{
+    font-size: 28px;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 6px rgba(0,0,0,.45);
+}
+@media (max-width: 640px){
+    .promo-fondo{ min-height: 200px; padding: 28px 18px; }
+    .promo-fondo h3{ font-size: 20px; }
 }
 
 /* ---------- FOOTER ---------- */

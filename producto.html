@@ -41,72 +41,77 @@
             <div class="product-card">
                 <img src="img/producto-verde.jpg" alt="Producto capilar verde">
                 <div class="product-name">Loción Detox Folicular</div>
-                <form class="size-options" action="">
+                <div class="size-options">
                     <div class="size-option">
-                        <label for="verde-chico"><input class="size-check" type="checkbox" name="verde" id="verde-chico"> Chico</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="verde-chico"><input class="size-check" type="checkbox" name="verde" id="verde-chico" data-size="Chico"> Chico <span class="precio">$180</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="180" disabled>
                     </div>
                     <div class="size-option">
-                        <label for="verde-mediano"><input class="size-check" type="checkbox" name="verde" id="verde-mediano"> Mediano</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="verde-mediano"><input class="size-check" type="checkbox" name="verde" id="verde-mediano" data-size="Mediano"> Mediano <span class="precio">$260</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="260" disabled>
                     </div>
-                </form>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="img/producto-morada.jpg" alt="Producto capilar morado">
                 <div class="product-name">Sérum Reparador Nocturno</div>
-                <form class="size-options" action="">
+                <div class="size-options">
                     <div class="size-option">
-                        <label for="morada-chico"><input class="size-check" type="checkbox" name="morada" id="morada-chico"> Chico</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="morada-chico"><input class="size-check" type="checkbox" name="morada" id="morada-chico" data-size="Chico"> Chico <span class="precio">$220</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="220" disabled>
                     </div>
                     <div class="size-option">
-                        <label for="morada-mediano"><input class="size-check" type="checkbox" name="morada" id="morada-mediano"> Mediano</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="morada-mediano"><input class="size-check" type="checkbox" name="morada" id="morada-mediano" data-size="Mediano"> Mediano <span class="precio">$310</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="310" disabled>
                     </div>
-                </form>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="img/producto-rojo.jpg" alt="Producto capilar rojo">
                 <div class="product-name">Tónico Estimulante Rojo</div>
-                <form class="size-options" action="">
+                <div class="size-options">
                     <div class="size-option">
-                        <label for="red-chico"><input class="size-check" type="checkbox" name="red" id="red-chico"> Chico</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="red-chico"><input class="size-check" type="checkbox" name="red" id="red-chico" data-size="Chico"> Chico <span class="precio">$190</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="190" disabled>
                     </div>
                     <div class="size-option">
-                        <label for="red-mediano"><input class="size-check" type="checkbox" name="red" id="red-mediano"> Mediano</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="red-mediano"><input class="size-check" type="checkbox" name="red" id="red-mediano" data-size="Mediano"> Mediano <span class="precio">$270</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="270" disabled>
                     </div>
-                </form>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="img/producto-kit.jpg" alt="Producto capilar especial">
                 <div class="product-name">Kit Fortalecedor Capilar</div>
-                <form class="size-options" action="">
+                <div class="size-options">
                     <div class="size-option">
-                        <label for="kit-chico"><input class="size-check" type="checkbox" name="kit" id="kit-chico"> Chico</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="kit-chico"><input class="size-check" type="checkbox" name="kit" id="kit-chico" data-size="Chico"> Chico <span class="precio">$350</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="350" disabled>
                     </div>
                     <div class="size-option">
-                        <label for="kit-mediano"><input class="size-check" type="checkbox" name="kit" id="kit-mediano"> Mediano</label>
-                        <input type="number" step="1" min="0" max="30" value="0">
+                        <label for="kit-mediano"><input class="size-check" type="checkbox" name="kit" id="kit-mediano" data-size="Mediano"> Mediano <span class="precio">$480</span></label>
+                        <input class="size-qty" type="number" step="1" min="1" max="30" value="1" data-price="480" disabled>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="resumen-pedido envoltura-resumen" id="resumen-pedido">
+        <span id="resumen-texto">Aún no has seleccionado ningún producto.</span>
+        <span class="resumen-total" id="resumen-total"></span>
     </div>
 
     <footer id="pedido">
         <div class="julio">
             <div class="order-actions">
-                <div>Elegir método de pago</div>
-                <div>Reiniciar pedido</div>
-                <div>Seguimiento del pedido</div>
-                <div>Hacer compra</div>
+                <button type="button" id="btn-pago">Elegir método de pago<span class="badge" id="badge-pago" hidden></span></button>
+                <button type="button" id="btn-reiniciar">Reiniciar pedido</button>
+                <button type="button" id="btn-seguimiento">Seguimiento del pedido</button>
+                <button type="button" id="btn-comprar">Hacer compra</button>
             </div>
 
             <div class="legal">
@@ -115,6 +120,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-overlay" id="modal-overlay" hidden>
+        <div class="modal-box" id="modal-box" role="dialog" aria-modal="true">
+            <button type="button" class="modal-cerrar" id="modal-cerrar" aria-label="Cerrar">&times;</button>
+            <div id="modal-contenido"></div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <script src="js/tienda.js" defer></script>
 </body>
 
 </html>

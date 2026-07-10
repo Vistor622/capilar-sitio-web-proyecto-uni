@@ -730,3 +730,295 @@ footer{
     background: rgba(255,255,255,.04);
     cursor: pointer;
 }
+
+/* =====================================================
+   TIENDA SIMULADA: precios, resumen, botones, modal, toast
+   ===================================================== */
+
+.precio{
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.size-option input[type="number"][disabled]{
+    opacity: .35;
+    cursor: not-allowed;
+}
+
+/* botones de acciones de pedido (ahora <button>, se ve igual que antes) */
+.order-actions button{
+    font: inherit;
+    border: 1px solid rgba(200,236,255,.35);
+    background: rgba(20,69,102,.55);
+    color: var(--sky);
+}
+
+.order-actions button:hover{
+    background: linear-gradient(180deg, rgba(28,101,151,1) 0%, rgba(79,214,196,.9) 100%);
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,.3);
+    transform: translateY(-2px);
+}
+
+.order-actions .badge{
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: var(--accent);
+    color: #06231f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* resumen de pedido, arriba de los botones */
+.resumen-pedido{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 18px 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--minle);
+    font-size: 14px;
+}
+
+.resumen-total{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* ---------- MODAL ---------- */
+.modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(6,15,26,.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1000;
+}
+
+.modal-overlay[hidden]{ display: none; }
+
+.modal-box{
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: var(--mar-soft);
+    border: 1px solid rgba(200,236,255,.25);
+    border-radius: var(--radius);
+    padding: 32px 28px 28px;
+    box-shadow: 0 24px 50px rgba(0,0,0,.5);
+    color: var(--letra);
+}
+
+.modal-cerrar{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: var(--sky);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-cerrar:hover{ color: #fff; }
+
+.modal-box h3{
+    color: var(--letra);
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.modal-box p{
+    color: var(--minle);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.modal-box .epic{
+    border: 2px solid var(--bor);
+    background: rgba(255,255,255,.04);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.modal-box .epic.secundario{
+    border-color: rgba(200,236,255,.35);
+    color: var(--minle);
+}
+
+.modal-acciones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* opciones de método de pago */
+.metodo-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.metodo-opcion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid rgba(200,236,255,.25);
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--minle);
+    transition: border-color .2s ease, background .2s ease;
+}
+
+.metodo-opcion:hover{ border-color: var(--accent); }
+
+.metodo-opcion input{ accent-color: var(--blue); }
+
+/* resumen de la compra dentro del modal */
+.compra-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: var(--minle);
+}
+
+.compra-lista li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(200,236,255,.2);
+    padding-bottom: 6px;
+}
+
+.compra-total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+/* spinner de "procesando pago" */
+.spinner{
+    width: 46px;
+    height: 46px;
+    margin: 10px auto 18px;
+    border: 4px solid rgba(200,236,255,.25);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: girar 900ms linear infinite;
+}
+
+@keyframes girar{
+    to{ transform: rotate(360deg); }
+}
+
+/* seguimiento de pedido: pasos */
+.pasos-tracker{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 18px 0;
+}
+
+.paso{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.paso:last-child{ padding-bottom: 0; }
+
+.paso::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(200,236,255,.2);
+}
+
+.paso:last-child::before{ display: none; }
+
+.paso-punto{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(200,236,255,.15);
+    border: 2px solid rgba(200,236,255,.3);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--minle);
+    z-index: 1;
+}
+
+.paso.activo .paso-punto{
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #06231f;
+}
+
+.paso-texto{ padding-top: 1px; }
+
+.paso-titulo{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--letra);
+}
+
+.paso.activo .paso-titulo{ color: var(--accent); }
+
+.paso-detalle{
+    font-size: 12px;
+    color: var(--minle);
+}
+
+/* toast de confirmación rápida */
+.toast{
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--blue);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.4);
+    z-index: 1100;
+    animation: toast-in 250ms ease;
+}
+
+.toast[hidden]{ display: none; }
+
+@keyframes toast-in{
+    from{ opacity: 0; transform: translate(-50%, 10px); }
+    to{ opacity: 1; transform: translate(-50%, 0); }
+}

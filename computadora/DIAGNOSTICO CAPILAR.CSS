@@ -1,8 +1,0 @@
-/* Estilos específicos de la página Diagnóstico Capilar.
-   La base visual (header, hero, cta-strip, footer) vive en capilar.css */
-
-.price{
-    font-size: 22px;
-    color: var(--accent);
-    letter-spacing: .5px;
-}
